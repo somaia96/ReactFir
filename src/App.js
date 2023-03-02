@@ -1,16 +1,17 @@
 // import {default as Tes ,x as s,y,Test} from './module';
 // import { Router } from "react-router-dom";
-import { Component } from 'react';
-import { BrowserRouter , Route, Routes } from "react-router-dom";
+import React , { Component } from 'react';
+import myImg from "./1.png";
+// import Col from './components/Col';
+// import { BrowserRouter , Route, Routes,Switch } from "react-router-dom";
 
 // import Child from './Child';
 // import Items from './components/Items';
-import About from './components/about';
-import Blog from './components/Blog';
-import Home from './components/home';
-import Rout from './components/Rout';
-
-import Nav from './components/Nav';
+// import About from './components/about';
+// import Blog  from './components/Blog' ;
+// import Home  from './components/home' ;
+// import Rout  from './components/Rout' ;
+// import Nav   from './components/Nav'  ;
 
 class App extends Component {
 
@@ -111,7 +112,7 @@ class App extends Component {
   render(){
     // console.log("render");
     return (
-      <BrowserRouter>
+      // <BrowserRouter>
         <div className="App">
           {/* Hello React {s+y} {Tes()} */}
           {/* <Child/> */}
@@ -141,21 +142,31 @@ class App extends Component {
             {/* <button>submit</button> */}
           {/* </form>
           {this.state.name} */}
-          <Nav />
+          {/* <Nav /> */}
           {/* <Home/>
           <About/> */}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/:test_params" element={<Rout />} />
-
+          {/* <Routes> */}
+            {/* <Switch> */}
+              {/* <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/:test_params" element={<Rout />} /> */}
+            {/* </Switch> */}
               {/* <Route exact path="/" component={Home}/>
               <Route path="/about" component={About}/> */}
-          </Routes>
-        </div>
-      </BrowserRouter>
-    );
+          {/* </Routes> */}
+        {/* </div> */}
+      {/* </BrowserRouter> */}
+      {/* <table>
+        <tbody>
+          <tr>
+            <Col/>
+          </tr>
+        </tbody>
+      </table> */}
+  <img src={myImg} className="img"/>
+      </div>
+    )
   }
 }
 
